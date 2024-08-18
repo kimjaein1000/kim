@@ -1,0 +1,1 @@
+{"name":"Local: the_dinamic","url":"/workspaces/kim/the_dinamic.cpp","tests":[{"id":1723965032659,"input":"500","output":"89"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/workspaces/kim/the_dinamic.cpp","group":"local","local":true}
