@@ -1,0 +1,2 @@
+#include <bits/stdc++.h>
+using namespace std;int n,m,r;int visited[10000001];vector<int> g[1000001];int V[10000001];int cnt=1;void dfs(int r){visited[r] = 1;V[r]=cnt++;auto e=g[r];sort(e.begin(),e.end());for(int edge:e){if(visited[edge]==0){dfs(edge);}}}int main(){cin>> n >> m;for(int i= 0;i < m;i++){int u,v;cin >> u >> v;g[u].push_back(v);g[v].push_back(u);}r=1;dfs(r);int cntt=0;for(int i = 1;i<=n;i++){if(visited[i]!=0)cntt++;}cout << cntt-1;}
